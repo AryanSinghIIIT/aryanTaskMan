@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import { Table } from "./components/Table";
-import { Modal } from "./components/Modal";
-const apiUrl = import.meta.env.VITE_API_URL || '${apiUrl}';
+import { Table } from "./components/Table/Table";
+import { Modal } from "./components/Modal/Modal";
+const apiUrl = import.meta.env.VITE_API_URL || `http://localhost:5000`;
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);

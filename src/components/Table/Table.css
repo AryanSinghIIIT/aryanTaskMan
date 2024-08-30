@@ -1,0 +1,127 @@
+/* Table.css */
+.table-wrapper {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-input {
+  margin-right: 10px;
+}
+
+.sort-btn, .btn-add {
+  margin-left: 10px;
+}
+
+
+.status-uninitiated {
+  color: gray;
+}
+
+.status-inProgress {
+  color: orange;
+}
+
+.status-completed {
+  color: green;
+}
+
+.is-assigned-yes {
+  color: green;
+}
+
+.is-assigned-no {
+  color: red;
+}
+
+.priority-low {
+  background-color: lightgray;
+}
+
+.priority-medium {
+  background-color: lightyellow;
+}
+
+.priority-high {
+  background-color: lightcoral;
+}
+
+.assigned-member-teamMember1 {
+  background-color: #f0f8ff;
+}
+
+.assigned-member-teamMember2 {
+  background-color: #e6e6fa;
+}
+
+.assigned-member-teamMember3 {
+  background-color: #fff0f5;
+}
+
+.assigned-member-teamMember4 {
+  background-color: #f5f5dc;
+}
+
+/* Add this CSS to Table.css */
+
+/* Styling for dropdown container */
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Optional: Style the dropdown options (useful for custom dropdowns) */
+option {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Dropdown within table header */
+th select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+th input {
+  padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  select {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
