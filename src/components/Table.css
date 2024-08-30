@@ -1,0 +1,77 @@
+/* Table.css */
+.table-wrapper {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-input {
+  margin-right: 10px;
+}
+
+.sort-btn, .btn-add {
+  margin-left: 10px;
+}
+
+
+.status-uninitiated {
+  color: gray;
+}
+
+.status-inProgress {
+  color: orange;
+}
+
+.status-completed {
+  color: green;
+}
+
+.is-assigned-yes {
+  color: green;
+}
+
+.is-assigned-no {
+  color: red;
+}
+
+.priority-low {
+  background-color: lightgray;
+}
+
+.priority-medium {
+  background-color: lightyellow;
+}
+
+.priority-high {
+  background-color: lightcoral;
+}
+
+.assigned-member-teamMember1 {
+  background-color: #f0f8ff;
+}
+
+.assigned-member-teamMember2 {
+  background-color: #e6e6fa;
+}
+
+.assigned-member-teamMember3 {
+  background-color: #fff0f5;
+}
+
+.assigned-member-teamMember4 {
+  background-color: #f5f5dc;
+}
