@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { BsFillTrashFill, BsFillPencilFill } from "react-icons/bs";
 import { CiFilter } from "react-icons/ci";
 import { RxDragHandleHorizontal } from "react-icons/rx";
+import Filter from "../Filter/Filter";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import "./Table.css";
 
@@ -15,7 +16,7 @@ export const Table = ({
   setModalOpen,
   setRows,
 }) => {
-  // const [isFilterOpen, setFilterOpen] = useState(false);
+  const [isFilterOpen, setFilterOpen] = useState(false);
   const [filters, setFilters] = useState({
     serialNo: "",
     description: "",
@@ -30,14 +31,15 @@ export const Table = ({
   });
   const [sortDirection, setSortDirection] = useState("asc");
 
-  // const openModal = () => setFilterOpen(true);
-  // const closeModal = () => setFilterOpen(false);
+  const openModal = () => setFilterOpen(true);
+  const closeModal = () => setFilterOpen(false);
 
   const handleSort = () => {
     setSortDirection(sortDirection === "asc" ? "desc" : "asc");
   };
   const taskIds = useMemo(() => [...new Set(rows.map(row => row.id))], [rows]);
   const statuses = ["uninitiated", "inProgress", "completed"];
+  const priorities = ["low", "medium", "high"];
 
   const allMembers = useMemo(() => {
     const membersSet = new Set();
